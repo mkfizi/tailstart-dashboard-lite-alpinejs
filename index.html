@@ -162,7 +162,7 @@
 
             <div class="flex items-center gap-8"> 
 
-                <aside id="navbar-menu" class="fixed top-0 left-0 z-10 invisible hidden w-screen h-screen lg:w-auto lg:h-auto lg:z-0 lg:relative lg:visible lg:block lg:bg-transparent bg-neutral-500/50"
+                <div id="navbar-menu" class="fixed top-0 left-0 z-10 invisible hidden w-screen h-screen lg:w-auto lg:h-auto lg:z-0 lg:relative lg:visible lg:block lg:bg-transparent bg-neutral-500/50"
                     :class="{ 'hidden invisible': !isNavbarMenuOpen }"
                     :aria-hidden="isNavbarMenuOpen ? false : true"
                     x-init="
@@ -223,7 +223,7 @@
                             </li>
                         </ul>
                     </div>
-                </aside>
+                </div>
 
                 <!-- Divider -->
                 <div class="hidden w-px h-8 lg:block bg-neutral-300 dark:bg-neutral-700"></div>
