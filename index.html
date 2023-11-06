@@ -135,9 +135,7 @@
             isScrolled = window.scrollY > 0;
         "
     >
-        <div class="flex items-center justify-between w-full h-16 max-w-screen-xl px-4 mx-auto sm:px-8">
-            
-            <div class="flex items-center gap-4">
+        <div class="flex items-center justify-between w-full h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-8">
 
                 <!-- Navbar menu open button -->
                 <button id="navbar-menu-open" type="button" class="group lg:hidden" aria-controls="navbar-menu" aria-expanded="false" aria-label="Open navbar menu"
@@ -151,18 +149,9 @@
                         <path d="M4 18l16 0" />
                     </svg>
                 </button>
-                
-                <!-- Logo -->
-                <a href="#" class="flex gap-4">
-                    <img src="./src/images/logo.png" alt="Tailstart logo" class="w-6 h-6 dark:hidden">
-                    <img src="./src/images/logo-dark.png" alt="Tailstart logo" class="hidden w-6 h-6 dark:block">
-                    <span class="text-lg font-bold text-black dark:text-white">Tailstart</span>
-                </a>
-            </div>  
 
-            <div class="flex items-center gap-8"> 
-
-                <div id="navbar-menu" class="fixed top-0 left-0 z-10 invisible hidden w-screen h-screen lg:w-auto lg:h-auto lg:z-0 lg:relative lg:visible lg:block lg:bg-transparent bg-neutral-500/50"
+                <!-- Navbar menu -->
+                <div id="navbar-menu" class="fixed top-0 left-0 z-10 invisible hidden w-screen h-screen lg:flex-1 lg:h-auto lg:z-0 lg:relative lg:w-auto lg:visible lg:block lg:bg-transparent bg-neutral-500/50"
                     :class="{ 'hidden invisible': !isNavbarMenuOpen }"
                     :aria-hidden="isNavbarMenuOpen ? false : true"
                     x-init="
@@ -193,7 +182,7 @@
                         }
                     "
                 >
-                    <div class="fixed top-0 left-0 h-full p-4 overflow-y-auto bg-white border-r shadow lg:relative lg:border-0 border-neutral-300 dark:border-neutral-700 lg:p-0 lg:pt-0 lg:pb-0 w-72 lg:w-auto lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-neutral-800" aria-labelledby="sidebar-menu">
+                <div class="fixed top-0 left-0 h-full p-4 overflow-y-auto bg-white border-r shadow lg:flex lg:justify-between lg:relative lg:border-0 border-neutral-300 dark:border-neutral-700 lg:p-0 lg:pt-0 lg:pb-0 w-72 lg:w-auto lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-neutral-800" aria-labelledby="sidebar-menu">
         
                         <!-- navbar menu close button -->
                         <button id="navbar-menu-close" type="button" class="absolute right-4 top-4 group lg:hidden" aria-controls="navbar-menu" aria-expanded="false" aria-label="Close navbar menu"
@@ -206,6 +195,13 @@
                                 <path d="M6 6l12 12" />
                             </svg>
                         </button>
+
+                        <!-- Logo -->
+                        <a href="#" class="flex gap-4 mb-8 lg:mb-0">
+                            <img src="./src/images/logo.png" alt="Tailstart logo" class="w-6 h-6 dark:hidden">
+                            <img src="./src/images/logo-dark.png" alt="Tailstart logo" class="hidden w-6 h-6 dark:block">
+                            <span class="text-lg font-bold text-black dark:text-white">Tailstart</span>
+                        </a>
         
                         <!-- Navbar menu link -->
                         <ul class="space-y-4 lg:space-y-0 lg:flex lg:gap-8">
