@@ -288,37 +288,7 @@
                     <ul id="settings-menu" class="absolute right-0 z-10 invisible hidden w-48 p-0.5 top-14 mt-1 overflow-y-auto bg-white border rounded-md max-h-64 border-neutral-300 dark:border-neutral-700 dark:bg-neutral-900 drop-shadow-md" aria-hidden="true"
                         :class="{ 'hidden invisible': !isSettingsMenuOpen }"
                         :aria-hidden="isSettingsMenuOpen ? false : true"
-                        x-data="{
-                            sections: document.querySelectorAll('section'),
-                            isSectionActive: {},
-        
-                            // Toggle active navbar menu link
-                            toggleActiveLink() {
-                                scrollPosition = window.scrollY;
-                                this.sections.forEach((targetSection) => {
-                                    const sectionTop = targetSection.offsetTop - navbarHeight - parseFloat(getComputedStyle(targetSection).marginTop);
-                                    const sectionHeight = targetSection.offsetHeight + parseFloat(getComputedStyle(targetSection).marginTop);
-                                    
-                                    this.isSectionActive[targetSection.id] = false;
-                                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                                        this.isSectionActive[targetSection.id] = true;
-                                    }
-                                });
-                            }
-                        }"
-                        x-init="
-                            toggleResponsive($el);
-                            toggleActiveLink();
-                        "
                         @keydown.escape.window="isSettingsMenuOpen = false"
-                        @resize.window="
-                            if (isBreakpointSize($el) === true) {
-                                isSettingsMenuOpen = false;
-                            }
-        
-                            toggleResponsive($el);
-                        "
-                        @scroll.window="toggleActiveLink()"
                         @click.document="
                             if (clickOutside($el, event) === false) {
                                 isSettingsMenuOpen = false;
