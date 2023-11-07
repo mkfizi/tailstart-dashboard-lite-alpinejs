@@ -184,41 +184,40 @@
             >
             <div class="fixed top-0 left-0 h-full p-4 overflow-y-auto bg-white border-r shadow lg:flex lg:justify-between lg:relative lg:border-0 border-neutral-300 dark:border-neutral-700 lg:p-0 lg:pt-0 lg:pb-0 w-72 lg:w-auto lg:bg-transparent lg:dark:bg-transparent lg:shadow-none dark:bg-neutral-800" aria-labelledby="sidebar-menu">
     
-                    <!-- navbar menu close button -->
-                    <button id="navbar-menu-close" type="button" class="absolute right-4 top-4 group lg:hidden" aria-controls="navbar-menu" aria-expanded="false" aria-label="Close navbar menu"
-                        :aria-expanded="isNavbarMenuOpen ? true : false"
-                        @click="isNavbarMenuOpen = false"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-neutral-500 dark:stroke-neutral-400 group-hover:stroke-black dark:group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M18 6l-12 12" />
-                            <path d="M6 6l12 12" />
-                        </svg>
-                    </button>
+                <!-- navbar menu close button -->
+                <button id="navbar-menu-close" type="button" class="absolute right-4 top-4 group lg:hidden" aria-controls="navbar-menu" aria-expanded="false" aria-label="Close navbar menu"
+                    :aria-expanded="isNavbarMenuOpen ? true : false"
+                    @click="isNavbarMenuOpen = false"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 stroke-neutral-500 dark:stroke-neutral-400 group-hover:stroke-black dark:group-hover:stroke-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M18 6l-12 12" />
+                        <path d="M6 6l12 12" />
+                    </svg>
+                </button>
 
-                    <!-- Logo -->
-                    <a href="#" class="flex gap-4 mb-8 lg:mb-0">
-                        <img src="./src/images/logo.png" alt="Tailstart logo" class="w-6 h-6 dark:hidden">
-                        <img src="./src/images/logo-dark.png" alt="Tailstart logo" class="hidden w-6 h-6 dark:block">
-                        <span class="text-lg font-bold text-black dark:text-white">Tailstart</span>
-                    </a>
-    
-                    <!-- Navbar menu link -->
-                    <ul class="space-y-4 lg:space-y-0 lg:flex lg:gap-8">
-                        <li>
-                            <a href="#" class="block font-semibold text-black dark:text-white">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block font-semibold text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white">Orders</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block font-semibold text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white">Products</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block font-semibold text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white">Customers</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Logo -->
+                <a href="#" class="flex gap-4 mb-8 lg:mb-0">
+                    <img src="./src/images/logo.png" alt="Tailstart logo" class="w-6 h-6 dark:hidden">
+                    <img src="./src/images/logo-dark.png" alt="Tailstart logo" class="hidden w-6 h-6 dark:block">
+                    <span class="text-lg font-bold text-black dark:text-white">Tailstart</span>
+                </a>
+
+                <!-- Navbar menu link -->
+                <ul class="space-y-4 lg:space-y-0 lg:flex lg:gap-8">
+                    <li>
+                        <a href="#" class="block font-semibold text-black dark:text-white">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block font-semibold text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block font-semibold text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white">Products</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block font-semibold text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white">Customers</a>
+                    </li>
+                </ul>
             </div>
 
             <!-- Divider -->
