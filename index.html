@@ -210,22 +210,22 @@
                                 {
                                     url: '#',
                                     title: 'Dashboard',
-                                    isActive: true
+                                    isCurrentPage: true
                                 },
                                 {
                                     url: '#',
                                     title: 'Orders',
-                                    isActive: false
+                                    isCurrentPage: false
                                 },
                                 {
                                     url: '#',
                                     title: 'Products',
-                                    isActive: false
+                                    isCurrentPage: false
                                 },
                                 {
                                     url: '#',
                                     title: 'Customer',
-                                    isActive: false
+                                    isCurrentPage: false
                                 }
                             ]
                         }"
@@ -234,7 +234,7 @@
                             <li>
                                 <a class="block font-semibold hover:text-black dark:hover:text-white"
                                     :href="link.url"
-                                    :class="link.isActive ? 'text-black dark:text-white' : 'text-neutral-500 dark:text-neutral-400'"
+                                    :class="link.isCurrentPage ? 'text-black dark:text-white' : 'text-neutral-500 dark:text-neutral-400'"
                                     x-text="link.title"
                                 ></a>
                             </li>
